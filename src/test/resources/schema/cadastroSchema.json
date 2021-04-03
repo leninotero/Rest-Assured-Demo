@@ -1,0 +1,125 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "empregadoId": 193,
+            "nome": "Teste Automatico",
+            "sexo": "m",
+            "cpf": "596.604.720-05",
+            "cargo": "Analista",
+            "admissao": "05/01/2015",
+            "salario": "2.500,00",
+            "comissao": "100,00",
+            "tipoContratacao": "clt"
+        }
+    ],
+    "required": [
+        "empregadoId",
+        "nome",
+        "sexo",
+        "cpf",
+        "cargo",
+        "admissao",
+        "salario",
+        "comissao",
+        "tipoContratacao"
+    ],
+    "properties": {
+        "empregadoId": {
+            "$id": "#/properties/empregadoId",
+            "type": "integer",
+            "title": "The empregadoId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                193
+            ]
+        },
+        "nome": {
+            "$id": "#/properties/nome",
+            "type": "string",
+            "title": "The nome schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Teste Automatico"
+            ]
+        },
+        "sexo": {
+            "$id": "#/properties/sexo",
+            "type": "string",
+            "title": "The sexo schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "m"
+            ]
+        },
+        "cpf": {
+            "$id": "#/properties/cpf",
+            "type": "string",
+            "title": "The cpf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "596.604.720-05"
+            ]
+        },
+        "cargo": {
+            "$id": "#/properties/cargo",
+            "type": "string",
+            "title": "The cargo schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Analista"
+            ]
+        },
+        "admissao": {
+            "$id": "#/properties/admissao",
+            "type": "string",
+            "title": "The admissao schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "05/01/2015"
+            ]
+        },
+        "salario": {
+            "$id": "#/properties/salario",
+            "type": "string",
+            "title": "The salario schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "2.500,00"
+            ]
+        },
+        "comissao": {
+            "$id": "#/properties/comissao",
+            "type": "string",
+            "title": "The comissao schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "100,00"
+            ]
+        },
+        "tipoContratacao": {
+            "$id": "#/properties/tipoContratacao",
+            "type": "string",
+            "title": "The tipoContratacao schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "clt"
+            ]
+        }
+    },
+    "additionalProperties": true
+}

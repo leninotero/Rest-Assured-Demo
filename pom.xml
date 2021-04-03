@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>RestAssuredDemo</groupId>
+  <artifactId>assured.com.br</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <properties>
+  	<rest.assured.version>4.3.0</rest.assured.version>
+  	<io.cucumber.version>6.9.1</io.cucumber.version>
+  	<junit.version>5.6.2</junit.version>
+  	<googlecode.json.version>1.1.1</googlecode.json.version>
+  	<lombok.version>1.18.16</lombok.version>
+  	<faker.version>1.0.2</faker.version>
+  </properties>
+  
+  <dependencies>
+  	
+	<dependency>
+	    <groupId>io.rest-assured</groupId>
+	    <artifactId>rest-assured</artifactId>
+	    <version>${rest.assured.version}</version>
+	    <scope>test</scope>
+	</dependency>
+	
+	<dependency>
+	    <groupId>io.rest-assured</groupId>
+	    <artifactId>json-schema-validator</artifactId>
+	    <version>${rest.assured.version}</version>
+	    <scope>test</scope>
+	</dependency>
+	
+	<dependency>
+         <groupId>io.cucumber</groupId>
+         <artifactId>cucumber-java</artifactId>
+         <version>${io.cucumber.version}</version>
+      </dependency>
+     
+      <dependency>
+         <groupId>io.cucumber</groupId>
+         <artifactId>cucumber-junit</artifactId>
+         <version>${io.cucumber.version}</version>
+         <scope>test</scope>
+      </dependency>
+	
+	<dependency>
+	    <groupId>org.junit.jupiter</groupId>
+	    <artifactId>junit-jupiter-api</artifactId>
+	    <version>${junit.version}</version>
+	    <scope>test</scope>
+	</dependency>
+		
+	<dependency>
+	    <groupId>com.googlecode.json-simple</groupId>
+	    <artifactId>json-simple</artifactId>
+	    <version>${googlecode.json.version}</version>
+	</dependency>	
+	
+	<dependency>
+		<groupId>org.projectlombok</groupId>
+		<artifactId>lombok</artifactId>
+		<version>${lombok.version}</version>
+		<scope>provided</scope>
+	</dependency>
+	
+	<dependency>
+	    <groupId>com.github.javafaker</groupId>
+	    <artifactId>javafaker</artifactId>
+	    <version>${faker.version}</version>
+	</dependency>
+  	
+  </dependencies>
+</project>
